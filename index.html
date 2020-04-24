@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="/styles/styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Raz</title>
+</head>
+<body class="light-theme">
+  <div class="container-wrapper">
+    <div class="header-wrapper">
+      <header class="header">
+        <div>
+          <h1 class="header-title">Social Media Dashboard</h1>
+          <span class="header-sub-title">Total Followers: 23,004</span>
+        </div>
+        <hr class="header-divider">
+        <div class="header-toggle">
+          <span class="header-sub-title">Dark Mode</span>
+          <div>
+            <label class="switch">
+              <input type="checkbox" id="dark-mode-toggle" onchange="toggleDarkMode()">
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="content">
+      <!-- Social Cards -->
+      <div id="social-account-cards">
+        <div class="card facebook">
+          <div class="card-border-top"></div>
+          <div class="card-body">
+            <div class="social-account">
+              <img class="social-icon" src="/images/icon-facebook.svg" alt="facebook-icon">
+              <span class="secondary-text-color">@nathanf</span>
+            </div>
+            <div class="social-details">
+              <div class="social-details-total-followers">1987</div>
+              <div class="social-label secondary-text-color">Followers</div>
+            </div>
+            <div class="social-status">
+              <img src="/images/icon-up.svg" alt="icon-up">
+              <span class="social-status-caption green-text-color">12 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="card twitter">
+          <div class="card-border-top"></div>
+          <div class="card-body">
+            <div class="social-account">
+              <img class="social-icon" src="/images/icon-twitter.svg" alt="twitter-icon">
+              <span class="secondary-text-color">@nathanf</span>
+            </div>
+            <div class="social-details">
+              <div class="social-details-total-followers">1044</div>
+              <div class="social-label secondary-text-color">Followers</div>
+            </div>
+            <div class="social-status">
+              <img src="/images/icon-up.svg" alt="icon-up">
+              <span class="social-status-caption green-text-color">99 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="card instagram">
+          <div class="card-border-top"></div>
+          <div class="card-body">
+            <div class="social-account">
+              <img class="social-icon" src="/images/icon-instagram.svg" alt="instagram-icon">
+              <span class="secondary-text-color">@realnathanf</span>
+            </div>
+            <div class="social-details">
+              <div class="social-details-total-followers">11k</div>
+              <div class="social-label secondary-text-color">Followers</div>
+            </div>
+            <div class="social-status">
+              <img src="/images/icon-up.svg" alt="icon-up">
+              <span class="social-status-caption green-text-color">1099 Today</span>
+            </div>
+          </div>
+        </div>
+        <div class="card youtube">
+          <div class="card-border-top"></div>
+          <div class="card-body">
+            <div class="social-account">
+              <img class="social-icon" src="/images/icon-youtube.svg" alt="youtube-icon">
+              <span class="secondary-text-color">Nathan F.</span>
+            </div>
+            <div class="social-details">
+              <div class="social-details-total-followers">8239</div>
+              <div class="social-label secondary-text-color">Subscribers</div>
+            </div>
+            <div class="social-status">
+              <img src="/images/icon-down.svg" alt="icon-up">
+              <span class="social-status-caption red-text-color">144 Today</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Overview -->
+      <h2 class="overview-title">Overview - Today</h2>
+      <div id="overview">
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Page Views</span>
+              <img class="social-icon" src="/images/icon-facebook.svg" alt="facebook-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">87</span>
+              <div class="overview-status">
+                <img src="/images/icon-up.svg" alt="icon-up">
+                <span class="green-text-color">3%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Likes</span>
+              <img class="social-icon" src="/images/icon-facebook.svg" alt="facebook-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">52</span>
+              <div class="overview-status">
+                <img src="/images/icon-down.svg" alt="icon-down">
+                <span class="red-text-color">2%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Likes</span>
+              <img class="social-icon" src="/images/icon-instagram.svg" alt="instagram-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">5462</span>
+              <div class="overview-status">
+                <img src="/images/icon-up.svg" alt="icon-up">
+                <span class="green-text-color">2257%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Profile Views</span>
+              <img class="social-icon" src="/images/icon-instagram.svg" alt="instagram-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">52k</span>
+              <div class="overview-status">
+                <img src="/images/icon-up.svg" alt="icon-up">
+                <span class="green-text-color">1375%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Retweets</span>
+              <img class="social-icon" src="/images/icon-twitter.svg" alt="twitter-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">117</span>
+              <div class="overview-status">
+                <img src="/images/icon-up.svg" alt="icon-up">
+                <span class="green-text-color">303%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Likes</span>
+              <img class="social-icon" src="/images/icon-twitter.svg" alt="twitter-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">507</span>
+              <div class="overview-status">
+                <img src="/images/icon-up.svg" alt="icon-up">
+                <span class="green-text-color">553%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span class="secondary-text-color">Likes</span>
+              <img class="social-icon" src="/images/icon-youtube.svg" alt="youtube-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">107</span>
+              <div class="overview-status">
+                <img src="/images/icon-down.svg" alt="icon-down">
+                <span class="red-text-color">19%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-body">
+            <div class="overview-header">
+              <span>Total Views</span>
+              <img class="social-icon" src="/images/icon-youtube.svg" alt="youtube-icon">
+            </div>
+            <div class="overview-body">
+              <span class="overview-total-number">1407</span>
+              <div class="overview-status">
+                <img src="/images/icon-down.svg" alt="icon-down">
+                <span class="red-text-color">12%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div>Challeged by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a></div>
+    <div>Coded by <a href="https://twitter.com/iamryutadashi">Raz</a></div>
+  </footer>
+  <script type="application/javascript" src="app.js"></script>
+</body>
+</html>
